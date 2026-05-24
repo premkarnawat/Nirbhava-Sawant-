@@ -70,7 +70,7 @@ function useCRUD(table: string) {
   const [loading, setLoading] = useState(true);
   const load = useCallback(async () => {
     setLoading(true);
-    const { data } = await supabase.from(table).select('*').order('sort_order', { ascending: true }).catch(()=>({data:[]}));
+    const { data } = await supabase.from(table).select('*').order('sort_order', { ascending: true });
     setItems(data||[]); setLoading(false);
   }, [table]);
   useEffect(() => { load(); }, [load]);
