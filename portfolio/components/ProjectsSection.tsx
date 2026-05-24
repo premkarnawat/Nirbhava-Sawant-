@@ -29,8 +29,8 @@ function ProjectCard({ p, i, pv }: { p:any; i:number; pv:boolean }) {
           {tags.slice(0,2).map((t:string) => <span key={t} style={{ background:'rgba(255,255,255,0.04)', border:'1px solid rgba(255,255,255,0.09)', borderRadius:50, padding:'2px 8px', fontFamily:"'DM Sans',sans-serif", fontSize:9, color:'rgba(255,255,255,0.35)' }}>{t}</span>)}
         </div>
         <div style={{ display:'flex', gap:6, flexWrap:'wrap' }}>
-          {p.github_link && <a href={p.github_link} target="_blank" rel="noopener noreferrer"><button className="lbtn">GitHub</button></a>}
-          <Link href={`/case-study/${p.id}`}><button className="lbtn">Case Study</button></Link>
+          {p.github_link && <a href={p.github_link} target="_blank" rel="noopener noreferrer"><button className="lbtn">Case Study</button></a>}
+          <Link href={`/case-study/${p.id}`}><button className="lbtn">live Link</button></Link>
           {p.live_link && <a href={p.live_link} target="_blank" rel="noopener noreferrer"><button className="lbtn" style={{ background:'rgba(156,39,176,0.1)', borderColor:'rgba(156,39,176,0.35)', color:'rgba(224,64,251,0.9)' }}>Live ↗</button></a>}
         </div>
       </div>
