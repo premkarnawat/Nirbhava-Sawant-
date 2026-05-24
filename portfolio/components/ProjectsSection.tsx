@@ -5,9 +5,9 @@ import { getProjects } from '@/lib/data';
 import { useReveal } from '@/hooks/useReveal';
 
 const FB = [
-  { id:'p1', num:'01', client:'CLIENT', sub:'Magma Studios', tags:['3D Design','Branding'], images:['https://images.unsplash.com/photo-1487530811015-780f2adb08af?w=600&q=75','https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=75','https://images.unsplash.com/photo-1490750967868-88df5691cc72?w=400&q=75'], live_link:'https://example.com', github_link:null },
-  { id:'p2', num:'02', client:'CLIENT', sub:'PixForge', tags:['UI/UX','Web Design'], images:['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75','https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?w=400&q=75','https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=75'], live_link:'https://example.com', github_link:'https://github.com' },
-  { id:'p3', num:'03', client:'CLIENT', sub:'MetaMorph Creations', tags:['Motion','Branding'], images:['https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=600&q=75','https://images.unsplash.com/photo-1610296669228-602fa827fc1f?w=400&q=75','https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&q=75'], live_link:null, github_link:'https://github.com' },
+  { id:'p1', num:'01', client:'CLIENT', sub:'Magma Studios', tags:['3D Design','Branding'], images:['https://images.unsplash.com/photo-1487530811015-780f2adb08af?w=600&q=75','https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=75','https://images.unsplash.com/photo-1490750967868-88df5691cc72?w=400&q=75'], live_link:'https://example.com', CaseStudy:null },
+  { id:'p2', num:'02', client:'CLIENT', sub:'PixForge', tags:['UI/UX','Web Design'], images:['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75','https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?w=400&q=75','https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=75'], live_link:'https://example.com',CaseStudy:'https://github.com' },
+  { id:'p3', num:'03', client:'CLIENT', sub:'MetaMorph Creations', tags:['Motion','Branding'], images:['https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=600&q=75','https://images.unsplash.com/photo-1610296669228-602fa827fc1f?w=400&q=75','https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&q=75'], live_link:null, CaseStudy:'https://github.com' },
 ];
 
 function ProjectCard({ p, i, pv }: { p:any; i:number; pv:boolean }) {
