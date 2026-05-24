@@ -43,7 +43,6 @@ export default function Home() {
           <EducationSection />
           <ProjectsSection />
           <CertificationsSection />
-          <TestimonialsSection />
           <ResumeSection />
           <ContactSection />
         </main>
