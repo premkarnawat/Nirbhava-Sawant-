@@ -37,3 +37,5 @@ export const submitContact = async (data: { name:string; email:string; message:s
   const { error } = await supabase.from('contacts').insert(data);
   return !error;
 };
+
+export const getProjectById = (id: string) => one<any>('projects', { id });
