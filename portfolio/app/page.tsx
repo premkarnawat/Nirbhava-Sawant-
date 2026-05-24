@@ -10,7 +10,6 @@ import ExperienceSection from '@/components/sections/ExperienceSection';
 import EducationSection from '@/components/sections/EducationSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import CertificationsSection from '@/components/sections/CertificationsSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import ResumeSection from '@/components/sections/ResumeSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
